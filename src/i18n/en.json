@@ -195,7 +195,7 @@
       },
       {
         "q": "Which languages is the app in?",
-        "a": "The app is currently in English."
+        "a": "English, Italian and French. You can switch language at any time in Profile → Language."
       },
       {
         "q": "Is my data shared with anyone?",
@@ -281,5 +281,37 @@
         }
       ]
     }
-  }
+  },
+  "lessons": [
+    "Build Calm Presence",
+    "Warm Face & Eye Contact",
+    "Calm Posture",
+    "Calm Stillness",
+    "Stay Calm Under Pressure",
+    "Calm, Clear Voice",
+    "Position Yourself Well",
+    "Listen to Understand",
+    "Natural Mirroring",
+    "Complete Module 1: Presence",
+    "Voice Variety",
+    "Pause and Speak Clearly",
+    "Use Clear Body Language",
+    "Keep Conversation Moving",
+    "Share Honestly, Stay Balanced",
+    "Get to the Point",
+    "Tell Short, Clear Stories",
+    "Speak Clearly and Credibly",
+    "Guide a Group Clearly",
+    "Complete Module 2: Expression",
+    "Listen for Feelings",
+    "Notice Social Cues",
+    "Match and Guide Gently",
+    "Stay Steady Under Pressure",
+    "Speak With Calm Conviction",
+    "Be Warm and Clear",
+    "Handle Interruptions Calmly",
+    "Respectful Disagreement",
+    "Guide Without Pushing",
+    "Complete Module 3: Connection"
+  ]
 }

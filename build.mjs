@@ -16,7 +16,7 @@ const CONFIG = {
   // Store links. Leave null until the listing is live: the button then reads
   // "Coming soon" instead of linking anywhere.
   appStoreUrl: null, // e.g. "https://apps.apple.com/app/id0000000000"
-  playStoreUrl: null, // e.g. "https://play.google.com/store/apps/details?id=com.charisma30.app"
+  playStoreUrl: "https://play.google.com/store/apps/details?id=com.charisma30.app",
   // Absolute site URL, used for canonical/hreflang/og tags. No trailing slash.
   siteUrl: "https://gianni85g.github.io/charisma30",
   email: "gianni85g@hotmail.it",
@@ -26,18 +26,6 @@ const CONFIG = {
 const LANGS = ["en", "it", "fr"]; // first = default, served at the site root
 const PREFIX = { en: "", it: "it/", fr: "fr/" };
 
-const LESSONS = [
-  "Build Calm Presence", "Warm Face & Eye Contact", "Calm Posture", "Calm Stillness",
-  "Stay Calm Under Pressure", "Calm, Clear Voice", "Position Yourself Well",
-  "Listen to Understand", "Natural Mirroring", "Complete Module 1: Presence",
-  "Voice Variety", "Pause and Speak Clearly", "Use Clear Body Language",
-  "Keep Conversation Moving", "Share Honestly, Stay Balanced", "Get to the Point",
-  "Tell Short, Clear Stories", "Speak Clearly and Credibly", "Guide a Group Clearly",
-  "Complete Module 2: Expression", "Listen for Feelings", "Notice Social Cues",
-  "Match and Guide Gently", "Stay Steady Under Pressure", "Speak With Calm Conviction",
-  "Be Warm and Clear", "Handle Interruptions Calmly", "Respectful Disagreement",
-  "Guide Without Pushing", "Complete Module 3: Connection",
-];
 
 // ---------------------------------------------------------------------------
 // Icons (Lucide, ISC licence) — inline SVG, 24×24, stroke = currentColor
@@ -165,12 +153,12 @@ function storeButtons(t) {
   const btn = (url, pre, name, ic) => {
     const inner = `${icon(ic, "icon store-icon")}<span class="store-text"><small>${esc(url ? pre : t.store.soon)}</small><strong>${esc(name)}</strong></span>`;
     return url
-      ? `<a class="store-btn" href="${url}" rel="noopener">${inner}</a>`
+      ? `<a class="store-btn" href="${esc(url)}" rel="noopener">${inner}</a>`
       : `<span class="store-btn is-soon" aria-disabled="true">${inner}</span>`;
   };
   return `<div class="stores">
           ${btn(CONFIG.appStoreUrl, t.store.iosPre, t.store.ios, "smartphone")}
-          ${btn(CONFIG.playStoreUrl, t.store.androidPre, t.store.android, "play")}
+          ${btn(CONFIG.playStoreUrl && t.lang !== "en" ? `${CONFIG.playStoreUrl}&hl=${t.lang}` : CONFIG.playStoreUrl, t.store.androidPre, t.store.android, "play")}
         </div>
         <p class="store-note">${esc(t.store.free)}</p>`;
 }
@@ -250,7 +238,7 @@ function home(t, lang) {
     .map((b) => `<li>${icon("check", "icon icon-sm")}<span>${esc(b)}</span></li>`)
     .join("");
 
-  const days = LESSONS.map((title, i) => {
+  const days = t.lessons.map((title, i) => {
     const milestone = (i + 1) % 10 === 0 ? " is-milestone" : "";
     return `<li class="day${milestone}"><span class="day-n">${esc(t.journey.day)} ${i + 1}</span><span class="day-t">${esc(title)}</span></li>`;
   });
@@ -295,8 +283,8 @@ function home(t, lang) {
           ${storeButtons(t)}
         </div>
         <div class="hero-visual">
-          ${phone(root, "lesson", null, t.hero.shot2Alt, "phone-back", true)}
-          ${phone(root, "home", "home-dark", t.hero.shotAlt, "phone-front", true)}
+          ${phone(root, `${lang}/lesson`, null, t.hero.shot2Alt, "phone-back", true)}
+          ${phone(root, `${lang}/home`, `${lang}/home-dark`, t.hero.shotAlt, "phone-front", true)}
         </div>
       </div>
       <div class="container">
@@ -328,7 +316,7 @@ function home(t, lang) {
           </ol>
         </div>
         <div class="split-visual">
-          ${phone(root, "lesson", null, t.how.shotAlt)}
+          ${phone(root, `${lang}/lesson`, null, t.how.shotAlt)}
         </div>
       </div>
     </section>
@@ -344,7 +332,7 @@ function home(t, lang) {
           </ul>
         </div>
         <div class="split-visual">
-          ${phone(root, "tool", null, t.toolkit.shotAlt)}
+          ${phone(root, `${lang}/tool`, null, t.toolkit.shotAlt)}
         </div>
       </div>
     </section>
@@ -358,7 +346,7 @@ function home(t, lang) {
           <ul class="checks">${bullets}</ul>
         </div>
         <div class="split-visual">
-          ${phone(root, "progress", "progress-dark", t.progress.shotAlt)}
+          ${phone(root, `${lang}/progress`, `${lang}/progress-dark`, t.progress.shotAlt)}
         </div>
       </div>
     </section>

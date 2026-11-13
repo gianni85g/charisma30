@@ -29,7 +29,7 @@
     "title": "Il carisma non è un dono.",
     "titleAccent": "È un allenamento.",
     "lead": "Charisma30 trasforma presenza, espressione e connessione in una breve lezione e una piccola pratica al giorno: così il cambiamento resta.",
-    "shotAlt": "Schermata Home di Charisma30: giorno 6 di 30, la lezione Calm, Clear Voice e le pratiche del giorno",
+    "shotAlt": "Schermata Home di Charisma30: giorno 6 di 30, la lezione Voce calma e chiara e le pratiche del giorno",
     "shot2Alt": "Schermata della lezione del giorno 6 di Charisma30"
   },
   "proof": [
@@ -62,9 +62,9 @@
         "days": "1–10",
         "text": "Corpo calmo, sguardo fermo, una voce che non ha fretta. La base che gli altri percepiscono prima ancora che tu parli.",
         "examples": [
-          "Build Calm Presence",
-          "Calm Posture",
-          "Calm, Clear Voice"
+          "Costruisci una presenza calma",
+          "Postura calma",
+          "Voce calma e chiara"
         ]
       },
       {
@@ -73,9 +73,9 @@
         "days": "11–20",
         "text": "Dire quello che pensi, in modo chiaro e credibile. Pause, storie, arrivare al punto e tenere con te chi ascolta.",
         "examples": [
-          "Pause and Speak Clearly",
-          "Tell Short, Clear Stories",
-          "Guide a Group Clearly"
+          "Fai pause e parla chiaro",
+          "Racconta storie brevi e chiare",
+          "Guida un gruppo con chiarezza"
         ]
       },
       {
@@ -84,9 +84,9 @@
         "days": "21–30",
         "text": "Leggere le persone, ascoltare le emozioni, dissentire con rispetto. La parte che trasforma l'attenzione in fiducia.",
         "examples": [
-          "Listen for Feelings",
-          "Notice Social Cues",
-          "Respectful Disagreement"
+          "Ascolta le emozioni",
+          "Nota i segnali sociali",
+          "Dissentire con rispetto"
         ]
       }
     ]
@@ -113,7 +113,7 @@
         "d": "La lezione successiva si sblocca il giorno dopo. Un passo alla volta il carisma diventa naturale."
       }
     ],
-    "shotAlt": "Schermata della lezione: il voto iniziale da Tense a Calm e i quattro passi della lezione"
+    "shotAlt": "Schermata della lezione del giorno 6: il voto iniziale da Teso a Calmo e i passi della lezione"
   },
   "toolkit": {
     "eyebrow": "Il tuo toolkit",
@@ -122,16 +122,16 @@
     "items": [
       {
         "icon": "wind",
-        "t": "Presence Reset",
+        "t": "Reset della presenza",
         "d": "Un esercizio di respirazione guidato (inspira 4, espira 6) da 1, 3 o 5 minuti. Si sblocca il giorno 1."
       },
       {
         "icon": "anchor",
-        "t": "Grounding Reset",
+        "t": "Reset di radicamento",
         "d": "Un breve reset per ansia, tensione o sovraccarico: i 5 sensi (5-4-3-2-1), sciogliere la tensione, dare un nome all'emozione, oppure STOP. Si sblocca il giorno 5."
       }
     ],
-    "shotAlt": "Strumento Presence Reset: un cerchio per respirare con le opzioni 1, 3 e 5 minuti"
+    "shotAlt": "Strumento Reset della presenza: un cerchio per respirare con le opzioni 1, 3 e 5 minuti"
   },
   "progress": {
     "eyebrow": "Progressi che si vedono",
@@ -143,13 +143,13 @@
       "Avanzamento in Presenza, Espressione e Connessione",
       "Promemoria discreti all'ora che scegli tu"
     ],
-    "shotAlt": "Schermata Progressi: giorno 6 di 30, serie di 5 giorni, livello 4 Magnetic e l'elenco delle lezioni"
+    "shotAlt": "Schermata Progressi: giorno 6 di 30, serie di 5 giorni, livello 4 Magnetico e l'elenco delle lezioni"
   },
   "journey": {
     "eyebrow": "I 30 giorni",
     "title": "Tutto il percorso, giorno per giorno",
     "lead": "Nessun dubbio su cosa viene dopo. Ecco tutte le lezioni del programma.",
-    "note": "I titoli sono quelli che trovi nell'app, che per ora è in inglese.",
+    "note": "",
     "day": "Giorno"
   },
   "privacy": {
@@ -195,11 +195,11 @@
       },
       {
         "q": "In che lingua è l'app?",
-        "a": "Per ora l'app è in inglese."
+        "a": "In italiano, inglese e francese. Puoi cambiare lingua quando vuoi da Profilo → Lingua."
       },
       {
         "q": "I miei dati vengono condivisi?",
-        "a": "No. Charisma30 non carica i tuoi dati da nessuna parte e non usa servizi di analisi o pubblicità. Puoi cancellare tutto in qualsiasi momento da Profile → Reset Progress."
+        "a": "No. Charisma30 non carica i tuoi dati da nessuna parte e non usa servizi di analisi o pubblicità. Puoi cancellare tutto in qualsiasi momento da Profilo → Reimposta i progressi."
       }
     ]
   },
@@ -235,7 +235,7 @@
         },
         {
           "h": "4. Cancellare i dati",
-          "p": "Puoi cancellare tutti i dati in qualsiasi momento con l'opzione \"Reset Progress\" nella pagina Profile, oppure disinstallando l'app."
+          "p": "Puoi cancellare tutti i dati in qualsiasi momento con l'opzione \"Reimposta i progressi\" nella pagina Profilo, oppure disinstallando l'app."
         },
         {
           "h": "5. Questo sito",
@@ -281,5 +281,37 @@
         }
       ]
     }
-  }
+  },
+  "lessons": [
+    "Costruisci una presenza calma",
+    "Volto caldo e contatto visivo",
+    "Postura calma",
+    "Immobilità calma",
+    "Mantieni la calma sotto pressione",
+    "Voce calma e chiara",
+    "Posizionati bene",
+    "Ascolta per capire",
+    "Rispecchiamento naturale",
+    "Completa il Modulo 1: Presenza",
+    "Varietà vocale",
+    "Fai pause e parla chiaro",
+    "Usa un linguaggio del corpo chiaro",
+    "Tieni viva la conversazione",
+    "Condividi con onestà, resta in equilibrio",
+    "Arriva al punto",
+    "Racconta storie brevi e chiare",
+    "Parla in modo chiaro e credibile",
+    "Guida un gruppo con chiarezza",
+    "Completa il Modulo 2: Espressione",
+    "Ascolta le emozioni",
+    "Nota i segnali sociali",
+    "Sintonizzati e guida con delicatezza",
+    "Resta stabile sotto pressione",
+    "Parla con convinzione calma",
+    "Sii caldo e chiaro",
+    "Gestisci le interruzioni con calma",
+    "Dissentire con rispetto",
+    "Guida senza spingere",
+    "Completa il Modulo 3: Connessione"
+  ]
 }

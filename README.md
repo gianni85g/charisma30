@@ -10,7 +10,7 @@ src/i18n/en.json, it.json, fr.json   tutti i testi, una lingua per file
 build.mjs                            genera le pagine in site/ (e contiene CONFIG)
 site/assets/styles.css               stile (colori del brand, tema chiaro e scuro)
 site/assets/main.js                  lingua del browser, menu lingue, comparsa al scroll
-site/assets/img/screens/             screenshot ricavati dall'app (utente di esempio, giorno 6)
+site/assets/img/screens/<lingua>/    screenshot ricavati dall'app in ogni lingua (utente di esempio, giorno 6)
 .github/workflows/pages.yml          pubblicazione automatica su GitHub Pages
 ```
 
@@ -28,7 +28,7 @@ Le pagine in `site/*.html` sono generate: non modificarle a mano.
 
 In `build.mjs`, blocco `CONFIG`:
 
-- `appStoreUrl` e `playStoreUrl`: incolla i link; i pulsanti passano da "Coming soon" a link veri.
+- `appStoreUrl`: incolla il link quando l'app esce su iOS; il pulsante passa da "Coming soon" a link vero. Google Play è già collegato.
 - `siteUrl`: l'indirizzo definitivo del sito (es. `https://<utente>.github.io/charisma30`),
   per canonical, hreflang e anteprima social.
 
