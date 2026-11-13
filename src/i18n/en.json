@@ -1,0 +1,285 @@
+{
+  "lang": "en",
+  "locale": "en_US",
+  "langName": "English",
+  "meta": {
+    "title": "Charisma30 — Build real charisma in 30 days",
+    "description": "A free 30-day program for calm presence, clear expression and real connection. One short lesson and one small practice a day. No account, no ads, no tracking.",
+    "privacyTitle": "Privacy Policy — Charisma30",
+    "termsTitle": "Terms of Use — Charisma30"
+  },
+  "nav": {
+    "how": "How it works",
+    "journey": "The 30 days",
+    "faq": "FAQ",
+    "cta": "Get the app",
+    "skip": "Skip to content",
+    "language": "Language"
+  },
+  "store": {
+    "soon": "Coming soon",
+    "ios": "App Store",
+    "android": "Google Play",
+    "iosPre": "Download on the",
+    "androidPre": "Get it on",
+    "free": "Free. No account needed."
+  },
+  "hero": {
+    "eyebrow": "30 days · 3 skills · free",
+    "title": "Charisma isn't a gift.",
+    "titleAccent": "It's a practice.",
+    "lead": "Charisma30 turns presence, expression and connection into one short lesson and one small practice a day — so the change actually sticks.",
+    "shotAlt": "Charisma30 Home screen: Day 6 of 30, the lesson Calm, Clear Voice, and today's practices",
+    "shot2Alt": "Charisma30 lesson screen for Day 6"
+  },
+  "proof": [
+    {
+      "n": "30",
+      "l": "guided lessons"
+    },
+    {
+      "n": "30+",
+      "l": "daily practices"
+    },
+    {
+      "n": "3",
+      "l": "core skills"
+    },
+    {
+      "n": "0",
+      "l": "accounts, ads or trackers"
+    }
+  ],
+  "pillars": {
+    "eyebrow": "Three skills, built in order",
+    "title": "Each stage builds the next layer of your charisma",
+    "lead": "You don't start by giving speeches. You start by feeling steady in your own body — then you learn to be heard, then to make people feel seen.",
+    "daysLabel": "Days",
+    "items": [
+      {
+        "key": "presence",
+        "name": "Presence",
+        "days": "1–10",
+        "text": "Calm body, steady eyes, a voice that doesn't rush. The foundation people feel before you say a word.",
+        "examples": [
+          "Build Calm Presence",
+          "Calm Posture",
+          "Calm, Clear Voice"
+        ]
+      },
+      {
+        "key": "expression",
+        "name": "Expression",
+        "days": "11–20",
+        "text": "Say what you mean, clearly and credibly. Pauses, stories, getting to the point — and keeping a room with you.",
+        "examples": [
+          "Pause and Speak Clearly",
+          "Tell Short, Clear Stories",
+          "Guide a Group Clearly"
+        ]
+      },
+      {
+        "key": "connection",
+        "name": "Connection",
+        "days": "21–30",
+        "text": "Read people, listen for feelings, disagree with respect. The part that turns attention into trust.",
+        "examples": [
+          "Listen for Feelings",
+          "Notice Social Cues",
+          "Respectful Disagreement"
+        ]
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "How a day works",
+    "title": "Learn it. Practise it. Keep it.",
+    "lead": "Every day follows the same simple rhythm, so you always know what to do when you open the app.",
+    "steps": [
+      {
+        "t": "Check in",
+        "d": "Rate how you feel before the lesson — 1 to 5. You'll rate again at the end and see the difference."
+      },
+      {
+        "t": "Learn one skill",
+        "d": "A short guided lesson in clear steps, with flashcards and a quick quiz to make it stick."
+      },
+      {
+        "t": "Take on a practice",
+        "d": "Finishing the lesson unlocks small real-life habits you repeat over the next days."
+      },
+      {
+        "t": "Come back tomorrow",
+        "d": "The next lesson unlocks the next day. One step at a time is how charisma becomes natural."
+      }
+    ],
+    "shotAlt": "Lesson screen: a before-rating from Tense to Calm and the four steps of the lesson"
+  },
+  "toolkit": {
+    "eyebrow": "Your toolkit",
+    "title": "Tools you keep, for the moments that matter",
+    "lead": "Some lessons unlock a reusable tool. Open it anytime — before a meeting, a date or a difficult call.",
+    "items": [
+      {
+        "icon": "wind",
+        "t": "Presence Reset",
+        "d": "A guided breathing reset — in for 4, out for 6 — for 1, 3 or 5 minutes. Unlocks on Day 1."
+      },
+      {
+        "icon": "anchor",
+        "t": "Grounding Reset",
+        "d": "A short reset for anxiety, tension or overwhelm: 5-4-3-2-1 senses, release tension, name the feeling, or STOP. Unlocks on Day 5."
+      }
+    ],
+    "shotAlt": "Presence Reset tool: a breathing circle with 1, 3 and 5 minute options"
+  },
+  "progress": {
+    "eyebrow": "Progress you can see",
+    "title": "Streaks, levels and a clear path to Day 30",
+    "lead": "Earn points for lessons and practices, level up, keep your streak alive and see exactly where you are in each stage.",
+    "bullets": [
+      "Daily streak and your best streak",
+      "Levels that grow with your points",
+      "Progress across Presence, Expression and Connection",
+      "Gentle reminders at the time you choose"
+    ],
+    "shotAlt": "Progress screen: Day 6 of 30, a 5-day streak, level 4 Magnetic and the list of lessons"
+  },
+  "journey": {
+    "eyebrow": "The 30 days",
+    "title": "The whole path, day by day",
+    "lead": "No guesswork about what comes next. Here is every lesson in the program.",
+    "note": "",
+    "day": "Day"
+  },
+  "privacy": {
+    "eyebrow": "Private by design",
+    "title": "Your growth stays on your phone",
+    "items": [
+      {
+        "icon": "lock",
+        "t": "No account",
+        "d": "Open the app and start. No sign-up, no email, no password."
+      },
+      {
+        "icon": "wifiOff",
+        "t": "Works offline",
+        "d": "Everything is stored on your device. No servers, no sync."
+      },
+      {
+        "icon": "eyeOff",
+        "t": "No ads, no tracking",
+        "d": "No analytics, no advertising networks, no third-party trackers."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Questions",
+    "title": "Frequently asked",
+    "items": [
+      {
+        "q": "Is Charisma30 really free?",
+        "a": "Yes. The app is free to download and use, with no ads."
+      },
+      {
+        "q": "How much time does it take each day?",
+        "a": "One short lesson plus small practices you fit into your normal day. Most people spend a few minutes on the practices and around a quarter of an hour on the lesson."
+      },
+      {
+        "q": "What if I miss a day?",
+        "a": "Nothing is lost. Your next lesson waits for you — you simply continue where you left off. Your streak restarts, your progress doesn't."
+      },
+      {
+        "q": "Do I need to create an account?",
+        "a": "No. There is no sign-up. Your name, progress and habits are stored only on your phone."
+      },
+      {
+        "q": "Which languages is the app in?",
+        "a": "The app is currently in English."
+      },
+      {
+        "q": "Is my data shared with anyone?",
+        "a": "No. Charisma30 does not upload your data, and uses no analytics or advertising services. You can erase everything at any time from Profile → Reset Progress."
+      }
+    ]
+  },
+  "final": {
+    "title": "Start Day 1 today.",
+    "lead": "Thirty days from now, you'll walk into the room differently."
+  },
+  "footer": {
+    "tagline": "Calm presence, clear expression, real connection.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "rights": "All rights reserved."
+  },
+  "legal": {
+    "back": "Back to home",
+    "updated": "Last updated",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "Your privacy is important. This policy explains how Charisma30 handles your data.",
+      "sections": [
+        {
+          "h": "1. Data storage",
+          "p": "All progress (completed days, name, avatar, habits and so on) is stored locally on your device. No data is uploaded to external servers."
+        },
+        {
+          "h": "2. Personal information",
+          "p": "The app does not collect or transmit your personal information. Any name you enter is stored only on your device."
+        },
+        {
+          "h": "3. Third-party services",
+          "p": "Charisma30 does not use analytics tools, advertising frameworks or external tracking services."
+        },
+        {
+          "h": "4. Deleting your data",
+          "p": "You can erase all stored data at any time with the \"Reset Progress\" option on the Profile page, or by uninstalling the app."
+        },
+        {
+          "h": "5. This website",
+          "p": "This website uses no cookies and no analytics, and only remembers your language choice in your own browser. It is hosted on GitHub Pages and loads its fonts from Google Fonts, which receive your IP address to deliver the pages."
+        },
+        {
+          "h": "6. Changes to this policy",
+          "p": "This policy may change as the app evolves. Continued use of the app means you accept the updated policy."
+        },
+        {
+          "h": "7. Contact",
+          "p": "For questions or concerns, write to {email}."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "intro": "By using Charisma30 you agree to these terms.",
+      "sections": [
+        {
+          "h": "1. Purpose",
+          "p": "This app is intended for personal development and educational purposes. You may not copy, resell or distribute its content without permission."
+        },
+        {
+          "h": "2. No guarantees",
+          "p": "Charisma30 provides structured training, but results vary from person to person. We do not guarantee specific outcomes in confidence, communication or personal growth."
+        },
+        {
+          "h": "3. Your responsibility",
+          "p": "You are responsible for your own actions, decisions and well-being. Always use the techniques in safe, respectful contexts."
+        },
+        {
+          "h": "4. Your data",
+          "p": "The app stores progress data locally on your device. No personal information is shared."
+        },
+        {
+          "h": "5. Changes",
+          "p": "These terms may be updated from time to time. Continued use of the app means you accept the changes."
+        },
+        {
+          "h": "6. Contact",
+          "p": "For support, write to {email}."
+        }
+      ]
+    }
+  }
+}

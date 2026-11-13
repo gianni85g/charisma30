@@ -1,0 +1,285 @@
+{
+  "lang": "it",
+  "locale": "it_IT",
+  "langName": "Italiano",
+  "meta": {
+    "title": "Charisma30 — Costruisci un carisma vero in 30 giorni",
+    "description": "Un percorso gratuito di 30 giorni per presenza calma, espressione chiara e connessione vera. Una breve lezione e una piccola pratica al giorno. Nessun account, niente pubblicità, nessun tracciamento.",
+    "privacyTitle": "Informativa sulla privacy — Charisma30",
+    "termsTitle": "Condizioni d'uso — Charisma30"
+  },
+  "nav": {
+    "how": "Come funziona",
+    "journey": "I 30 giorni",
+    "faq": "Domande",
+    "cta": "Scarica l'app",
+    "skip": "Vai al contenuto",
+    "language": "Lingua"
+  },
+  "store": {
+    "soon": "Presto disponibile",
+    "ios": "App Store",
+    "android": "Google Play",
+    "iosPre": "Scarica su",
+    "androidPre": "Disponibile su",
+    "free": "Gratis. Senza account."
+  },
+  "hero": {
+    "eyebrow": "30 giorni · 3 abilità · gratis",
+    "title": "Il carisma non è un dono.",
+    "titleAccent": "È un allenamento.",
+    "lead": "Charisma30 trasforma presenza, espressione e connessione in una breve lezione e una piccola pratica al giorno: così il cambiamento resta.",
+    "shotAlt": "Schermata Home di Charisma30: giorno 6 di 30, la lezione Calm, Clear Voice e le pratiche del giorno",
+    "shot2Alt": "Schermata della lezione del giorno 6 di Charisma30"
+  },
+  "proof": [
+    {
+      "n": "30",
+      "l": "lezioni guidate"
+    },
+    {
+      "n": "30+",
+      "l": "pratiche quotidiane"
+    },
+    {
+      "n": "3",
+      "l": "abilità chiave"
+    },
+    {
+      "n": "0",
+      "l": "account, pubblicità o tracker"
+    }
+  ],
+  "pillars": {
+    "eyebrow": "Tre abilità, in ordine",
+    "title": "Ogni fase costruisce lo strato successivo del tuo carisma",
+    "lead": "Non si parte dai discorsi in pubblico. Si parte dal sentirsi stabili nel proprio corpo, poi si impara a farsi ascoltare, poi a far sentire gli altri visti.",
+    "daysLabel": "Giorni",
+    "items": [
+      {
+        "key": "presence",
+        "name": "Presenza",
+        "days": "1–10",
+        "text": "Corpo calmo, sguardo fermo, una voce che non ha fretta. La base che gli altri percepiscono prima ancora che tu parli.",
+        "examples": [
+          "Build Calm Presence",
+          "Calm Posture",
+          "Calm, Clear Voice"
+        ]
+      },
+      {
+        "key": "expression",
+        "name": "Espressione",
+        "days": "11–20",
+        "text": "Dire quello che pensi, in modo chiaro e credibile. Pause, storie, arrivare al punto e tenere con te chi ascolta.",
+        "examples": [
+          "Pause and Speak Clearly",
+          "Tell Short, Clear Stories",
+          "Guide a Group Clearly"
+        ]
+      },
+      {
+        "key": "connection",
+        "name": "Connessione",
+        "days": "21–30",
+        "text": "Leggere le persone, ascoltare le emozioni, dissentire con rispetto. La parte che trasforma l'attenzione in fiducia.",
+        "examples": [
+          "Listen for Feelings",
+          "Notice Social Cues",
+          "Respectful Disagreement"
+        ]
+      }
+    ]
+  },
+  "how": {
+    "eyebrow": "Come funziona una giornata",
+    "title": "Impara. Allenati. Mantieni.",
+    "lead": "Ogni giorno segue lo stesso ritmo semplice: quando apri l'app sai sempre cosa fare.",
+    "steps": [
+      {
+        "t": "Fai il punto",
+        "d": "Prima della lezione dai un voto a come ti senti, da 1 a 5. Lo rifai alla fine e vedi la differenza."
+      },
+      {
+        "t": "Impara un'abilità",
+        "d": "Una breve lezione guidata a passi chiari, con flashcard e un piccolo quiz per fissarla."
+      },
+      {
+        "t": "Prendi una pratica",
+        "d": "Finita la lezione si sbloccano piccole abitudini da ripetere nella vita reale nei giorni successivi."
+      },
+      {
+        "t": "Torna domani",
+        "d": "La lezione successiva si sblocca il giorno dopo. Un passo alla volta il carisma diventa naturale."
+      }
+    ],
+    "shotAlt": "Schermata della lezione: il voto iniziale da Tense a Calm e i quattro passi della lezione"
+  },
+  "toolkit": {
+    "eyebrow": "Il tuo toolkit",
+    "title": "Strumenti che restano tuoi, per i momenti che contano",
+    "lead": "Alcune lezioni sbloccano uno strumento riutilizzabile. Aprilo quando vuoi: prima di una riunione, di un appuntamento o di una telefonata difficile.",
+    "items": [
+      {
+        "icon": "wind",
+        "t": "Presence Reset",
+        "d": "Un esercizio di respirazione guidato (inspira 4, espira 6) da 1, 3 o 5 minuti. Si sblocca il giorno 1."
+      },
+      {
+        "icon": "anchor",
+        "t": "Grounding Reset",
+        "d": "Un breve reset per ansia, tensione o sovraccarico: i 5 sensi (5-4-3-2-1), sciogliere la tensione, dare un nome all'emozione, oppure STOP. Si sblocca il giorno 5."
+      }
+    ],
+    "shotAlt": "Strumento Presence Reset: un cerchio per respirare con le opzioni 1, 3 e 5 minuti"
+  },
+  "progress": {
+    "eyebrow": "Progressi che si vedono",
+    "title": "Serie, livelli e una strada chiara fino al giorno 30",
+    "lead": "Guadagni punti con lezioni e pratiche, sali di livello, tieni viva la serie e vedi esattamente a che punto sei in ogni fase.",
+    "bullets": [
+      "Serie di giorni consecutivi e il tuo record",
+      "Livelli che crescono con i punti",
+      "Avanzamento in Presenza, Espressione e Connessione",
+      "Promemoria discreti all'ora che scegli tu"
+    ],
+    "shotAlt": "Schermata Progressi: giorno 6 di 30, serie di 5 giorni, livello 4 Magnetic e l'elenco delle lezioni"
+  },
+  "journey": {
+    "eyebrow": "I 30 giorni",
+    "title": "Tutto il percorso, giorno per giorno",
+    "lead": "Nessun dubbio su cosa viene dopo. Ecco tutte le lezioni del programma.",
+    "note": "I titoli sono quelli che trovi nell'app, che per ora è in inglese.",
+    "day": "Giorno"
+  },
+  "privacy": {
+    "eyebrow": "Privato per scelta",
+    "title": "La tua crescita resta sul tuo telefono",
+    "items": [
+      {
+        "icon": "lock",
+        "t": "Nessun account",
+        "d": "Apri l'app e inizi. Niente registrazione, email o password."
+      },
+      {
+        "icon": "wifiOff",
+        "t": "Funziona offline",
+        "d": "Tutto è salvato sul tuo dispositivo. Nessun server, nessuna sincronizzazione."
+      },
+      {
+        "icon": "eyeOff",
+        "t": "Niente pubblicità né tracciamento",
+        "d": "Nessuno strumento di analisi, nessuna rete pubblicitaria, nessun tracker di terze parti."
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "Domande",
+    "title": "Domande frequenti",
+    "items": [
+      {
+        "q": "Charisma30 è davvero gratis?",
+        "a": "Sì. L'app è gratuita da scaricare e da usare, e non ha pubblicità."
+      },
+      {
+        "q": "Quanto tempo serve ogni giorno?",
+        "a": "Una breve lezione più piccole pratiche da inserire nella tua giornata normale. Di solito bastano pochi minuti per le pratiche e circa un quarto d'ora per la lezione."
+      },
+      {
+        "q": "E se salto un giorno?",
+        "a": "Non perdi nulla. La lezione successiva ti aspetta e riprendi da dove eri rimasto. Riparte la serie, non i progressi."
+      },
+      {
+        "q": "Devo creare un account?",
+        "a": "No. Non c'è registrazione. Nome, progressi e abitudini restano solo sul tuo telefono."
+      },
+      {
+        "q": "In che lingua è l'app?",
+        "a": "Per ora l'app è in inglese."
+      },
+      {
+        "q": "I miei dati vengono condivisi?",
+        "a": "No. Charisma30 non carica i tuoi dati da nessuna parte e non usa servizi di analisi o pubblicità. Puoi cancellare tutto in qualsiasi momento da Profile → Reset Progress."
+      }
+    ]
+  },
+  "final": {
+    "title": "Inizia oggi il giorno 1.",
+    "lead": "Tra trenta giorni entrerai in una stanza in modo diverso."
+  },
+  "footer": {
+    "tagline": "Presenza calma, espressione chiara, connessione vera.",
+    "privacy": "Privacy",
+    "terms": "Condizioni",
+    "contact": "Contatti",
+    "rights": "Tutti i diritti riservati."
+  },
+  "legal": {
+    "back": "Torna alla home",
+    "updated": "Ultimo aggiornamento",
+    "privacy": {
+      "title": "Informativa sulla privacy",
+      "intro": "La tua privacy è importante. Questa informativa spiega come Charisma30 tratta i tuoi dati.",
+      "sections": [
+        {
+          "h": "1. Dove sono salvati i dati",
+          "p": "Tutti i progressi (giorni completati, nome, avatar, abitudini e così via) sono salvati solo sul tuo dispositivo. Nessun dato viene caricato su server esterni."
+        },
+        {
+          "h": "2. Dati personali",
+          "p": "L'app non raccoglie né trasmette i tuoi dati personali. Il nome che inserisci resta solo sul tuo dispositivo."
+        },
+        {
+          "h": "3. Servizi di terze parti",
+          "p": "Charisma30 non usa strumenti di analisi, sistemi pubblicitari o servizi di tracciamento esterni."
+        },
+        {
+          "h": "4. Cancellare i dati",
+          "p": "Puoi cancellare tutti i dati in qualsiasi momento con l'opzione \"Reset Progress\" nella pagina Profile, oppure disinstallando l'app."
+        },
+        {
+          "h": "5. Questo sito",
+          "p": "Questo sito non usa cookie né strumenti di analisi e ricorda soltanto la lingua che hai scelto, nel tuo browser. È ospitato su GitHub Pages e carica i caratteri da Google Fonts, che ricevono il tuo indirizzo IP per consegnare le pagine."
+        },
+        {
+          "h": "6. Modifiche",
+          "p": "Questa informativa può cambiare con l'evoluzione dell'app. Continuare a usare l'app significa accettare l'informativa aggiornata."
+        },
+        {
+          "h": "7. Contatti",
+          "p": "Per domande o segnalazioni scrivi a {email}."
+        }
+      ]
+    },
+    "terms": {
+      "title": "Condizioni d'uso",
+      "intro": "Usando Charisma30 accetti queste condizioni.",
+      "sections": [
+        {
+          "h": "1. Finalità",
+          "p": "L'app è pensata per la crescita personale e a scopo educativo. Non puoi copiare, rivendere o distribuire i contenuti senza autorizzazione."
+        },
+        {
+          "h": "2. Nessuna garanzia",
+          "p": "Charisma30 offre un allenamento strutturato, ma i risultati variano da persona a persona. Non garantiamo risultati specifici in fiducia in sé, comunicazione o crescita personale."
+        },
+        {
+          "h": "3. La tua responsabilità",
+          "p": "Sei responsabile delle tue azioni, delle tue decisioni e del tuo benessere. Usa sempre le tecniche in contesti sicuri e rispettosi."
+        },
+        {
+          "h": "4. I tuoi dati",
+          "p": "L'app salva i progressi solo sul tuo dispositivo. Nessun dato personale viene condiviso."
+        },
+        {
+          "h": "5. Modifiche",
+          "p": "Queste condizioni possono essere aggiornate. Continuare a usare l'app significa accettare le modifiche."
+        },
+        {
+          "h": "6. Contatti",
+          "p": "Per assistenza scrivi a {email}."
+        }
+      ]
+    }
+  }
+}
