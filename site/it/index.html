@@ -20,9 +20,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/archi-favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/img/brand/archi-192-navy.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="../assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/main.js" defer></script>
 </head>
@@ -65,17 +64,17 @@
           <h1 id="hero-title">Il carisma non è un dono. <span class="accent-text">È un allenamento.</span></h1>
           <p class="lead">Charisma30 trasforma presenza, espressione e connessione in una breve lezione e una piccola pratica al giorno: così il cambiamento resta.</p>
           <div class="stores">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=it" rel="noopener"><img src="../assets/img/badges/google-play-it.png" width="186" height="72" alt="Disponibile su Google Play"></a>
           <span class="store-btn is-soon" aria-disabled="true"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span class="store-text"><small>Presto disponibile</small><strong>App Store</strong></span></span>
-          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=it" rel="noopener"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg><span class="store-text"><small>Disponibile su</small><strong>Google Play</strong></span></a>
         </div>
         <p class="store-note">Gratis. Senza account.</p>
         </div>
         <div class="hero-visual">
           <figure class="phone phone-back">
-      <picture><img src="../assets/img/screens/it/lesson.jpg" width="720" height="1560" alt="Schermata della lezione del giorno 6 di Charisma30" fetchpriority="high" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/it/lesson-480.jpg" srcset="../assets/img/screens/it/lesson-480.jpg 480w, ../assets/img/screens/it/lesson.jpg 720w" sizes="(min-width: 960px) 250px, 220px" width="720" height="1560" alt="Schermata della lezione del giorno 6 di Charisma30"  decoding="async"></picture>
     </figure>
           <figure class="phone phone-front">
-      <picture><source srcset="../assets/img/screens/it/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/it/home.jpg" width="720" height="1560" alt="Schermata Home di Charisma30: giorno 6 di 30, la lezione Voce calma e chiara e le pratiche del giorno" fetchpriority="high" decoding="async"></picture>
+      <picture><source srcset="../assets/img/screens/it/home-dark-480.jpg 480w, ../assets/img/screens/it/home-dark.jpg 720w" sizes="(min-width: 960px) 300px, 260px" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/it/home-480.jpg" srcset="../assets/img/screens/it/home-480.jpg 480w, ../assets/img/screens/it/home.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Schermata Home di Charisma30: giorno 6 di 30, la lezione Voce calma e chiara e le pratiche del giorno" fetchpriority="high" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -153,7 +152,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><img src="../assets/img/screens/it/lesson.jpg" width="720" height="1560" alt="Schermata della lezione del giorno 6: il voto iniziale da Teso a Calmo e i passi della lezione" loading="lazy" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/it/lesson-480.jpg" srcset="../assets/img/screens/it/lesson-480.jpg 480w, ../assets/img/screens/it/lesson.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Schermata della lezione del giorno 6: il voto iniziale da Teso a Calmo e i passi della lezione" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -178,7 +177,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><img src="../assets/img/screens/it/tool.jpg" width="720" height="1560" alt="Strumento Reset della presenza: un cerchio per respirare con le opzioni 1, 3 e 5 minuti" loading="lazy" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/it/tool-480.jpg" srcset="../assets/img/screens/it/tool-480.jpg 480w, ../assets/img/screens/it/tool.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Strumento Reset della presenza: un cerchio per respirare con le opzioni 1, 3 e 5 minuti" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -194,7 +193,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><source srcset="../assets/img/screens/it/progress-dark.jpg" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/it/progress.jpg" width="720" height="1560" alt="Schermata Progressi: giorno 6 di 30, serie di 5 giorni, livello 4 Magnetico e l'elenco delle lezioni" loading="lazy" decoding="async"></picture>
+      <picture><source srcset="../assets/img/screens/it/progress-dark-480.jpg 480w, ../assets/img/screens/it/progress-dark.jpg 720w" sizes="(min-width: 960px) 300px, 260px" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/it/progress-480.jpg" srcset="../assets/img/screens/it/progress-480.jpg 480w, ../assets/img/screens/it/progress.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Schermata Progressi: giorno 6 di 30, serie di 5 giorni, livello 4 Magnetico e l'elenco delle lezioni" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -303,8 +302,8 @@
         <h2 id="final-title">Inizia oggi il giorno 1.</h2>
         <p class="lead">Tra trenta giorni entrerai in una stanza in modo diverso.</p>
         <div class="stores">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=it" rel="noopener"><img src="../assets/img/badges/google-play-it.png" width="186" height="72" alt="Disponibile su Google Play"></a>
           <span class="store-btn is-soon" aria-disabled="true"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span class="store-text"><small>Presto disponibile</small><strong>App Store</strong></span></span>
-          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=it" rel="noopener"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg><span class="store-text"><small>Disponibile su</small><strong>Google Play</strong></span></a>
         </div>
         <p class="store-note">Gratis. Senza account.</p>
       </div>

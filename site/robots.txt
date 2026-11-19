@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gianni85g.github.io/charisma30/sitemap.xml

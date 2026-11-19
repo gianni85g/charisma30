@@ -106,9 +106,8 @@ function head(t, { lang, page, root, title, description }) {
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="${root}assets/img/brand/archi-favicon-32.png">
   <link rel="apple-touch-icon" href="${root}assets/img/brand/archi-192-navy.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="${root}assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="${root}assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="${root}assets/styles.css">
   <script src="${root}assets/main.js" defer></script>
 </head>`;
@@ -149,27 +148,34 @@ function header(t, lang, page, root) {
   </header>`;
 }
 
-function storeButtons(t) {
-  const btn = (url, pre, name, ic) => {
-    const inner = `${icon(ic, "icon store-icon")}<span class="store-text"><small>${esc(url ? pre : t.store.soon)}</small><strong>${esc(name)}</strong></span>`;
-    return url
-      ? `<a class="store-btn" href="${esc(url)}" rel="noopener">${inner}</a>`
-      : `<span class="store-btn is-soon" aria-disabled="true">${inner}</span>`;
-  };
+function storeButtons(t, root) {
+  // Google Play: the official badge (Google brand guidelines), in the page language.
+  const play = CONFIG.playStoreUrl
+    ? `<a class="store-badge" href="${esc(t.lang === "en" ? CONFIG.playStoreUrl : `${CONFIG.playStoreUrl}&hl=${t.lang}`)}" rel="noopener"><img src="${root}assets/img/badges/google-play-${t.lang}.png" width="186" height="72" alt="${esc(`${t.store.androidPre} ${t.store.android}`)}"></a>`
+    : "";
+  // App Store: plain button until the iOS listing exists (then swap in Apple's badge).
+  const ios = CONFIG.appStoreUrl
+    ? `<a class="store-btn" href="${esc(CONFIG.appStoreUrl)}" rel="noopener">${icon("smartphone", "icon store-icon")}<span class="store-text"><small>${esc(t.store.iosPre)}</small><strong>${esc(t.store.ios)}</strong></span></a>`
+    : `<span class="store-btn is-soon" aria-disabled="true">${icon("smartphone", "icon store-icon")}<span class="store-text"><small>${esc(t.store.soon)}</small><strong>${esc(t.store.ios)}</strong></span></span>`;
   return `<div class="stores">
-          ${btn(CONFIG.appStoreUrl, t.store.iosPre, t.store.ios, "smartphone")}
-          ${btn(CONFIG.playStoreUrl && t.lang !== "en" ? `${CONFIG.playStoreUrl}&hl=${t.lang}` : CONFIG.playStoreUrl, t.store.androidPre, t.store.android, "play")}
+          ${play}
+          ${ios}
         </div>
         <p class="store-note">${esc(t.store.free)}</p>`;
 }
 
 // A phone with a light screenshot and, when given, a dark-mode variant.
 function phone(root, light, dark, alt, cls = "", eager = false) {
-  const src = `${root}assets/img/screens/${light}.jpg`;
-  const darkSrc = dark ? `<source srcset="${root}assets/img/screens/${dark}.jpg" media="(prefers-color-scheme: dark)">` : "";
-  const loading = eager ? 'fetchpriority="high"' : 'loading="lazy"';
+  // Each screenshot exists at 480px and 720px wide; the browser picks by screen.
+  const set = (name) =>
+    `${root}assets/img/screens/${name}-480.jpg 480w, ${root}assets/img/screens/${name}.jpg 720w`;
+  const sizes = cls === "phone-back" ? "(min-width: 960px) 250px, 220px" : "(min-width: 960px) 300px, 260px";
+  const darkSrc = dark
+    ? `<source srcset="${set(dark)}" sizes="${sizes}" media="(prefers-color-scheme: dark)">`
+    : "";
+  const loading = eager ? (cls === "phone-front" ? 'fetchpriority="high"' : "") : 'loading="lazy"';
   return `<figure class="phone ${cls}">
-      <picture>${darkSrc}<img src="${src}" width="720" height="1560" alt="${esc(alt)}" ${loading} decoding="async"></picture>
+      <picture>${darkSrc}<img src="${root}assets/img/screens/${light}-480.jpg" srcset="${set(light)}" sizes="${sizes}" width="720" height="1560" alt="${esc(alt)}" ${loading} decoding="async"></picture>
     </figure>`;
 }
 
@@ -280,7 +286,7 @@ function home(t, lang) {
           <p class="eyebrow eyebrow-light">${esc(t.hero.eyebrow)}</p>
           <h1 id="hero-title">${esc(t.hero.title)} <span class="accent-text">${esc(t.hero.titleAccent)}</span></h1>
           <p class="lead">${esc(t.hero.lead)}</p>
-          ${storeButtons(t)}
+          ${storeButtons(t, root)}
         </div>
         <div class="hero-visual">
           ${phone(root, `${lang}/lesson`, null, t.hero.shot2Alt, "phone-back", true)}
@@ -394,7 +400,7 @@ function home(t, lang) {
         ${LOGO(true)}
         <h2 id="final-title">${esc(t.final.title)}</h2>
         <p class="lead">${esc(t.final.lead)}</p>
-        ${storeButtons(t)}
+        ${storeButtons(t, root)}
       </div>
     </section>
   </main>
@@ -447,6 +453,23 @@ for (const lang of LANGS) {
   legal(t, lang, "privacy");
   legal(t, lang, "terms");
 }
+// SEO: sitemap with hreflang alternates for every page, and robots.txt.
+if (CONFIG.siteUrl) {
+  const urls = ["home", "privacy", "terms"].flatMap((page) =>
+    LANGS.map((lang) => {
+      const alts = LANGS.map(
+        (l) => `    <xhtml:link rel="alternate" hreflang="${l}" href="${CONFIG.siteUrl}/${pagePath(l, page)}"/>`,
+      ).join("\n");
+      return `  <url>\n    <loc>${CONFIG.siteUrl}/${pagePath(lang, page)}</loc>\n${alts}\n    <xhtml:link rel="alternate" hreflang="x-default" href="${CONFIG.siteUrl}/${pagePath(LANGS[0], page)}"/>\n  </url>`;
+    }),
+  );
+  write(
+    "sitemap.xml",
+    `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${urls.join("\n")}\n</urlset>\n`,
+  );
+  write("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${CONFIG.siteUrl}/sitemap.xml\n`);
+}
+
 // GitHub Pages: serve files as-is (no Jekyll processing).
 write(".nojekyll", "");
 write(

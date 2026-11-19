@@ -20,9 +20,8 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/brand/archi-favicon-32.png">
   <link rel="apple-touch-icon" href="../assets/img/brand/archi-192-navy.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  <link rel="preload" href="../assets/fonts/outfit-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/jakarta-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/styles.css">
   <script src="../assets/main.js" defer></script>
 </head>
@@ -65,17 +64,17 @@
           <h1 id="hero-title">Le charisme n'est pas un don. <span class="accent-text">C'est un entraînement.</span></h1>
           <p class="lead">Charisma30 transforme la présence, l'expression et la connexion en une courte leçon et une petite pratique par jour, pour que le changement dure.</p>
           <div class="stores">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=fr" rel="noopener"><img src="../assets/img/badges/google-play-fr.png" width="186" height="72" alt="Disponible sur Google Play"></a>
           <span class="store-btn is-soon" aria-disabled="true"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span class="store-text"><small>Bientôt disponible</small><strong>App Store</strong></span></span>
-          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=fr" rel="noopener"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg><span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span></a>
         </div>
         <p class="store-note">Gratuit. Sans compte.</p>
         </div>
         <div class="hero-visual">
           <figure class="phone phone-back">
-      <picture><img src="../assets/img/screens/fr/lesson.jpg" width="720" height="1560" alt="Écran de la leçon du jour 6 de Charisma30" fetchpriority="high" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/fr/lesson-480.jpg" srcset="../assets/img/screens/fr/lesson-480.jpg 480w, ../assets/img/screens/fr/lesson.jpg 720w" sizes="(min-width: 960px) 250px, 220px" width="720" height="1560" alt="Écran de la leçon du jour 6 de Charisma30"  decoding="async"></picture>
     </figure>
           <figure class="phone phone-front">
-      <picture><source srcset="../assets/img/screens/fr/home-dark.jpg" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/fr/home.jpg" width="720" height="1560" alt="Écran d'accueil de Charisma30 : jour 6 sur 30, la leçon Voix calme et claire et les pratiques du jour" fetchpriority="high" decoding="async"></picture>
+      <picture><source srcset="../assets/img/screens/fr/home-dark-480.jpg 480w, ../assets/img/screens/fr/home-dark.jpg 720w" sizes="(min-width: 960px) 300px, 260px" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/fr/home-480.jpg" srcset="../assets/img/screens/fr/home-480.jpg 480w, ../assets/img/screens/fr/home.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Écran d'accueil de Charisma30 : jour 6 sur 30, la leçon Voix calme et claire et les pratiques du jour" fetchpriority="high" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -153,7 +152,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><img src="../assets/img/screens/fr/lesson.jpg" width="720" height="1560" alt="Écran de la leçon du jour 6 : la note de départ et les étapes de la leçon" loading="lazy" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/fr/lesson-480.jpg" srcset="../assets/img/screens/fr/lesson-480.jpg 480w, ../assets/img/screens/fr/lesson.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Écran de la leçon du jour 6 : la note de départ et les étapes de la leçon" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -178,7 +177,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><img src="../assets/img/screens/fr/tool.jpg" width="720" height="1560" alt="Outil Reset de présence : un cercle de respiration avec les options 1, 3 et 5 minutes" loading="lazy" decoding="async"></picture>
+      <picture><img src="../assets/img/screens/fr/tool-480.jpg" srcset="../assets/img/screens/fr/tool-480.jpg 480w, ../assets/img/screens/fr/tool.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Outil Reset de présence : un cercle de respiration avec les options 1, 3 et 5 minutes" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -194,7 +193,7 @@
         </div>
         <div class="split-visual">
           <figure class="phone ">
-      <picture><source srcset="../assets/img/screens/fr/progress-dark.jpg" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/fr/progress.jpg" width="720" height="1560" alt="Écran Ta progression : jour 6 sur 30, série de 5 jours, niveau 4 Magnétique et la liste des leçons" loading="lazy" decoding="async"></picture>
+      <picture><source srcset="../assets/img/screens/fr/progress-dark-480.jpg 480w, ../assets/img/screens/fr/progress-dark.jpg 720w" sizes="(min-width: 960px) 300px, 260px" media="(prefers-color-scheme: dark)"><img src="../assets/img/screens/fr/progress-480.jpg" srcset="../assets/img/screens/fr/progress-480.jpg 480w, ../assets/img/screens/fr/progress.jpg 720w" sizes="(min-width: 960px) 300px, 260px" width="720" height="1560" alt="Écran Ta progression : jour 6 sur 30, série de 5 jours, niveau 4 Magnétique et la liste des leçons" loading="lazy" decoding="async"></picture>
     </figure>
         </div>
       </div>
@@ -303,8 +302,8 @@
         <h2 id="final-title">Commence le jour 1 aujourd'hui.</h2>
         <p class="lead">Dans trente jours, tu entreras dans une pièce autrement.</p>
         <div class="stores">
+          <a class="store-badge" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=fr" rel="noopener"><img src="../assets/img/badges/google-play-fr.png" width="186" height="72" alt="Disponible sur Google Play"></a>
           <span class="store-btn is-soon" aria-disabled="true"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg><span class="store-text"><small>Bientôt disponible</small><strong>App Store</strong></span></span>
-          <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.charisma30.app&amp;hl=fr" rel="noopener"><svg class="icon store-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><polygon points="6 3 20 12 6 21 6 3"/></svg><span class="store-text"><small>Disponible sur</small><strong>Google Play</strong></span></a>
         </div>
         <p class="store-note">Gratuit. Sans compte.</p>
       </div>
